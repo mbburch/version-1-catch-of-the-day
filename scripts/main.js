@@ -12,6 +12,7 @@ var StorePicker = React.createClass({
     var name = "wes";
     return (
       <form className="store-selector">
+        {/* jsx comment needs to go in brackets */}
         <h2>Please Enter a Store {name}</h2>
         <input type="text" ref="storeId" required />
         <input type="Submit" />
