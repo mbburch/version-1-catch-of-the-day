@@ -7,6 +7,8 @@ var Route = ReactRouter.Route;
 var Navigation = ReactRouter.Navigation;
 var createBrowserHistory = require('history/lib/createBrowserHistory');
 
+var h = require('./helpers');
+
 /*
   App
 */
@@ -83,7 +85,7 @@ var StorePicker = React.createClass({
       <form className="store-selector">
         {/* jsx comment needs to go in brackets */}
         <h2>Please Enter a Store {name}</h2>
-        <input type="text" ref="storeId" required />
+        <input type="text" ref="storeId" defaultValue={h.getFunName()} required />
         <input type="Submit" />
       </form>
     )
